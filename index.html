@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumitsinh Gohil | Web Developer & Digital Marketer</title>
+<meta name="description" content="Portfolio of Sumitsinh Gohil: web development, digital marketing and lead generation from Ahmedabad, Gujarat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a class="logo" href="#top">Sumit<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a>
+    <a href="#services">Services</a>
+    <a class="btn small" href="#contact">Hire me</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hello">Hi, I'm Sumitsinh Gohil</p>
+      <h1>I build<br><span id="typed" aria-live="polite"></span><i class="caret"></i></h1>
+      <p class="lead">IT student from Ahmedabad who writes clean web pages and runs lead generation campaigns. I like work that looks good and brings in real customers.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Start a project</a>
+        <a class="btn ghost" href="#journey">See my journey</a>
+      </div>
+      <div class="chips">
+        <span>HTML · CSS · JS</span><span>Python · Java</span><span>Lead generation</span>
+      </div>
+    </div>
+
+    <div class="studio">
+      <div class="frame">
+        <img id="photo" src="photo.jpeg" alt="Portrait of Sumitsinh Gohil in a navy blazer">
+        <span class="tag t1">Web developer</span>
+        <span class="tag t2">Marketer</span>
+        <span class="tag t3">Always learning</span>
+      </div>
+      <div class="panel" aria-label="Photo editor controls">
+        <div class="panel-head"><b>Edit my photo</b><button id="reset" type="button">Reset</button></div>
+        <label>Brightness <input type="range" id="bright" min="60" max="150" value="100"></label>
+        <label>Contrast <input type="range" id="contrast" min="60" max="150" value="100"></label>
+        <label>Saturation <input type="range" id="sat" min="0" max="200" value="100"></label>
+        <label>Warmth <input type="range" id="warm" min="0" max="60" value="0"></label>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>A student who learns by doing</h2>
+    <div class="about-grid">
+      <p>I'm studying Information Technology at Dalia Institute of Technology (GTU), after finishing a Diploma in IT at Government Polytechnic, Kheda with 8.62 CGPA.</p>
+      <p>Alongside studies I worked as a Sales and Digital Marketing Executive, so I understand both sides: how a page is built and how it gets customers. That mix is what I bring to every project.</p>
+    </div>
+    <div class="stats">
+      <div><b data-n="8.62" data-d="2">0</b><span>Diploma CGPA</span></div>
+      <div><b data-n="6" data-d="0">0</b><span>Months in marketing and sales</span></div>
+      <div><b data-n="3" data-d="0">0</b><span>Languages spoken</span></div>
+      <div><b data-n="4" data-d="0">0</b><span>Coding languages</span></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>What I can do</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-t="code" role="tab">Code</button>
+      <button class="tab" data-t="market" role="tab">Marketing</button>
+      <button class="tab" data-t="people" role="tab">People</button>
+    </div>
+    <div class="bars" id="bars"></div>
+    <p class="note">Bars show how comfortable I feel today. They grow as I do.</p>
+  </section>
+
+  <section id="journey" class="section">
+    <h2>My journey</h2>
+    <ol class="timeline">
+      <li><time>2022</time><h3>Started Diploma in Information Technology</h3><p>Government Polytechnic, Kheda. Learned web basics, Python and Java.</p></li>
+      <li><time>2025</time><h3>Finished diploma with 8.62 CGPA</h3><p>Moved on to a BE in Information Technology at Dalia Institute of Technology (GTU).</p></li>
+      <li><time>Nov 2025 to Apr 2026</time><h3>Sales and Digital Marketing Executive</h3><p>Jashom Technologies Pvt Ltd. Ran digital marketing and lead generation, supported sales and customer relationships, and worked with the team on brand presence.</p></li>
+      <li><time>Now</time><h3>Building this portfolio and taking freelance work</h3><p>Open to small websites, marketing support and data work.</p></li>
+    </ol>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Work with me</h2>
+    <div class="cards">
+      <article class="card"><h3>One-page websites</h3><p>Fast, responsive pages in HTML, CSS and JavaScript for people, shops and small businesses.</p></article>
+      <article class="card"><h3>Lead generation</h3><p>Outreach and digital campaigns that bring interested customers to your door.</p></article>
+      <article class="card"><h3>Python and Java scripts</h3><p>Small programs that automate repeated tasks and tidy up data.</p></article>
+      <article class="card"><h3>Documents and data entry</h3><p>Quick, accurate typing and MS Office files, delivered on time.</p></article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Let's make something good</h2>
+    <p class="lead">Tell me what you need. I reply within a day.</p>
+    <form id="form">
+      <input id="fname" placeholder="Your name" required>
+      <input id="fmail" type="email" placeholder="Your email" required>
+      <textarea id="fmsg" rows="4" placeholder="What would you like to build?" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+    <div class="links">
+      <a href="mailto:gohilsumitsinhsanjubhai26@gmail.com">gohilsumitsinhsanjubhai26@gmail.com</a>
+      <a href="tel:+916355967642">+91 63559 67642</a>
+      <a href="https://www.linkedin.com/in/sumitsinh-gohil-2a344a306" target="_blank" rel="noopener">LinkedIn</a>
+      <span>Dholka, Ahmedabad, Gujarat</span>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Sumitsinh Gohil. Designed and built with HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</html>
